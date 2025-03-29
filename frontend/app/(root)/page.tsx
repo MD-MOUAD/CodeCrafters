@@ -1,4 +1,5 @@
 // import { auth } from "@clerk/nextjs/server";
+import Hero from "@/components/Hero";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -8,6 +9,8 @@ export const metadata: Metadata = {
 const Home = async () => {
   // const { userId } = auth();
 
-  return <>Home page</>;
+  return <>
+  <Hero/>
+  </>;
 };
 export default Home;
