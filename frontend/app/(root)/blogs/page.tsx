@@ -16,7 +16,7 @@ export default function Home() {
     <section className="bg-gradient-to-b from-gray-50 to-gray-100 py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-12 text-center">
-          <h2 className="mb-3 text-4xl font-bold text-gray-900">
+          <h2 className="mb-3 mt-8 text-4xl font-bold text-gray-900">
             Latest Articles
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-gray-600">
