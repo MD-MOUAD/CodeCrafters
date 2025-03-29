@@ -1,8 +1,9 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable no-unused-vars */
 "use server";
-import User from "../../../backend/models/User";
 import { connectToDatabase } from "../mongoose";
+
+import User from "@/lib/database";
 
 export async function createUser(userData : any) {
   try {
