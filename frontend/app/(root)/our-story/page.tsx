@@ -5,8 +5,8 @@ const OurStory = () => {
         <div className="min-h-screen bg-gradient-to-b from-black to-blue-900 pt-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         
-            <section className="relative py-16 w-full">
-                <div className="max-w-4xl mx-auto px-6 text-center bg-white bg-opacity-0 p-8 rounded-lg ">
+            <section className="relative py-8 w-full">
+                <div className="max-w-4xl mx-auto px-6 text-center bg-white bg-opacity-0 rounded-lg ">
                     <h1 className="text-4xl font-bold text-white mb-6">Our Story</h1>
                     <div className="relative w-full h-64 mb-6">
                         <img 
