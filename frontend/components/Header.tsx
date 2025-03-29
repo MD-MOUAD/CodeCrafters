@@ -45,7 +45,7 @@ export default function Header() {
         </SignedIn>
         <SignedOut>
           <div className='flex gap-3'>
-            <Button>
+            <Button size={"sm"} variant="outline" className="hidden md:flex">
             <Link href="sign-in" >Sign in</Link>
      
             </Button>
