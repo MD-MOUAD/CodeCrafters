@@ -1,10 +1,11 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable no-unused-vars */
 "use server";
-import User from "@/database/user.model";
 import { connectToDatabase } from "../mongoose";
 
-export async function createUser(userData: CreateUserParams) {
+import User from "@/lib/database";
+
+export async function createUser(userData) {
   try {
     connectToDatabase();
 
@@ -17,7 +18,7 @@ export async function createUser(userData: CreateUserParams) {
   }
 }
 
-export async function updateUser(params: UpdateUserParams) {
+export async function updateUser(params) {
   try {
     connectToDatabase();
     const { clerkId, updateData, path } = params;
@@ -28,7 +29,7 @@ export async function updateUser(params: UpdateUserParams) {
   }
 }
 
-export async function deleteUser(params: DeleteUserParams) {
+export async function deleteUser(params) {
   try {
     connectToDatabase();
     const { clerkId } = params;
