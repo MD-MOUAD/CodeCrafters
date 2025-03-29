@@ -14,7 +14,7 @@ const OurStory = () => {
                     />
                 </div>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                    Glogs was born from a passion for storytelling and media. We wanted to create a platform where writers, creators, and journalists 
+                    Blogs was born from a passion for storytelling and media. We wanted to create a platform where writers, creators, and journalists 
                     could share their ideas with the world in an engaging and meaningful way. 
                 </p>
                 <p className="mt-4 text-lg text-gray-700 leading-relaxed">
