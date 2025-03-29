@@ -5,7 +5,7 @@ import { connectToDatabase } from "../mongoose";
 
 import User from "@/lib/database";
 
-export async function createUser(userData : any) {
+export async function createUser(userData) {
   try {
     connectToDatabase();
 
@@ -18,7 +18,7 @@ export async function createUser(userData : any) {
   }
 }
 
-export async function updateUser(params: any) {
+export async function updateUser(params) {
   try {
     connectToDatabase();
     const { clerkId, updateData, path } = params;
@@ -29,7 +29,7 @@ export async function updateUser(params: any) {
   }
 }
 
-export async function deleteUser(params: any) {
+export async function deleteUser(params) {
   try {
     connectToDatabase();
     const { clerkId } = params;
