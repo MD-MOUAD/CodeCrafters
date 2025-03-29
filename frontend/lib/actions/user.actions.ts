@@ -1,28 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable no-unused-vars */
 "use server";
-import User from "../../../backend/models/User";
+import User from "@/database/user.model";
 import { connectToDatabase } from "../mongoose";
-import {
-  CreateUserParams,
-  DeleteUserParams,
-  GetUserByIdParams,
-  UpdateUserParams,
-} from "./shared.types";
-
-export async function getUserById(params: GetUserByIdParams) {
-  try {
-    connectToDatabase();
-
-    const { userId } = params;
-
-    const user = await User.findOne({ clerkId: userId });
-    return user;
-  } catch (error) {
-    console.log(error);
-    throw error;
-  }
-}
 
 export async function createUser(userData: CreateUserParams) {
   try {
